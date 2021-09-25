@@ -10,30 +10,39 @@ html{
 }
 
 #main{
+    
+}
 
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-btn{
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-icon{
+    font-size: 20px;
+    line-height: 46.4px;
+   
 }
 
 #header{
     height: 46.4px;
     background-color: #000;
-}
-
-#header .search-btn:hover{
-    color: #fff;
-    background-color: #f44336;
-}
-
-#header .search-btn{
-    float: right;
-    padding:0 21px;
-    
+    position: Fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 #header .search-icon{
     color: #fff;
     font-size: 20px;
     line-height: 46.4px;
-    cursor: pointer;
 }
 
 #nav{
@@ -90,16 +99,41 @@ html{
      line-height: 38.4px;  
 }
 
-#nav .nav-arrow-down{
-    font-size: 12px;
+#nav .nav-angle-down{
+    font-size: 14px;
 }
 
 #slider{
-
+    position: relative;
+    margin-top: 46.4px;
+    padding-top: 50%;
+    background: url('/assets/img/slider1/slider1.jpg') top center / cover no-repeat;
 }
 
-#content{
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    /* right: 0;
+    left: 0; */
+    /* left: 50%;
+    transform: translateX(-50%); */
+    text-align: center;
+}
 
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+}
+     
+#content{
+   
 }
 
 #footer{
